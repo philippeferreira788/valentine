@@ -16,18 +16,22 @@
     }
 
     *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      min-height:100svh;
-      display:grid;
-      place-items:center;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background: radial-gradient(1200px 800px at 20% 10%, var(--bg2), transparent 60%),
-                  radial-gradient(1200px 800px at 80% 90%, #fff, transparent 55%),
-                  linear-gradient(135deg, var(--bg1), var(--bg2));
-      overflow:hidden;
-    }
+    body {
+    margin: 0;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: white;
+
+    background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
     .card{
       width:min(720px, 92vw);
