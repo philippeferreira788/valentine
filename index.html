@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pour Mon Bibi ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f0;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ff4d88;
+        }
+
+        .container {
+            position: relative;
+            height: 300px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        #yes {
+            background-color: #ff66a3;
+            color: white;
+        }
+
+        #no {
+            background-color: #999;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Mon bibi, veux-tu être ma valentine ? 💘</h1>
+
+<div class="container">
+    <button id="yes" onclick="alert('Je savais que tu dirais oui ❤️🥰')">Oui</button>
+    <button id="no">Non</button>
+</div>
+
+<script>
+    const noButton = document.getElementById("no");
+
+    noButton.addEventListener("mouseover", function() {
+        const x = Math.random() * 300;
+        const y = Math.random() * 200;
+
+        noButton.style.left = x + "px";
+        noButton.style.top = y + "px";
+    });
+</script>
+
+</body>
+</html>
